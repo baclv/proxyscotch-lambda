@@ -1,0 +1,42 @@
+{
+  "name": "proxyscotch-lambda",
+  "version": "0.0.1",
+  "description": "A simple proxy server created for https://hoppscotch.io",
+  "main": "index.js",
+  "repository": "git@github.com:baclv/proxyscotch-lambda.git",
+  "author": "La Van Bac",
+  "license": "MIT",
+  "scripts": {
+    "serve": "sls offline",
+    "deploy": "sls deploy"
+  },
+  "engines": {
+    "node": "12.x",
+    "yarn": "1.x"
+  },
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "axios": "^0.20.0",
+    "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "serverless-http": "^2.6.0",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.1.2",
+    "serverless": "^2.1.1",
+    "serverless-dotenv-plugin": "^3.0.0",
+    "serverless-offline": "^6.7.0"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "useTabs": false,
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "bracketSpacing": true,
+    "arrowParens": "always",
+    "endOfLine": "lf"
+  }
+}

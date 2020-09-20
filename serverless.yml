@@ -1,0 +1,18 @@
+service:
+  name: proxyscotch-service
+
+plugins:
+  - serverless-dotenv-plugin
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: ${opt:stage, 'dev'}
+
+functions:
+  proxy:
+    timeout: 30
+    handler: lambda.handler
+    events:
+      - http: ANY /proxy
