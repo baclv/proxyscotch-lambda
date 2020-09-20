@@ -77,6 +77,8 @@ proxy.use(async (ctx) => {
 
   const response = await axios(options);
 
+  // TODO: use ResponseBuilder
+  // TODO: change logic convertBinary
   ctx.body = {
     success: true,
     status: response.status,
