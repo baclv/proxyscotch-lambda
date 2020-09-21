@@ -1,4 +1,4 @@
-exports.ResponseBuilder = class ResponseBuilder {
+class ResponseBuilder {
   constructor(data) {
     this._data = data || {};
     this._success = true;
@@ -15,4 +15,6 @@ exports.ResponseBuilder = class ResponseBuilder {
       data: this._data,
     };
   }
-};
+}
+
+module.exports = { ResponseBuilder };
